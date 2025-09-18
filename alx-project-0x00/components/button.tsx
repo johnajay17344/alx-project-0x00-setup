@@ -1,16 +1,11 @@
+// components/Button.tsx
 import React from "react";
-
-interface ButtonProps {
-  title: string;
-  size?: "small" | "medium" | "large";
-  shape?: "rounded-sm" | "rounded-md" | "rounded-full";
-}
+import { ButtonProps } from "../interfaces";
 
 const Button: React.FC<ButtonProps> = ({
   size = "medium",
   shape = "rounded-md",
 }) => {
-  // handle sizes
   const sizeClasses = {
     small: "px-2 py-1 text-sm",
     medium: "px-4 py-2 text-base",
